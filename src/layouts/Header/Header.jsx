@@ -6,12 +6,18 @@ import BurgerButton from '@/components/BurgerButton'
 
 export default () => {
   return (
-    <header className="header">
+    <header className="header" data-js-mobile-menu="">
       <div className="header__inner container">
         <Logo className="header__logo" />
-        <Menu className="header__menu" />
+        <Menu
+          className="header__menu"
+          extraAttrs={{ 'data-js-mobile-menu-overlay': '' }}
+        />
         <Socials className="header__socials" />
-        <BurgerButton className="header__burger-button visible-mobile" />
+        <BurgerButton
+          className="header__burger-button visible-mobile"
+          extraAttrs={{ 'data-js-mobile-menu-burger-button': '' }}
+        />
       </div>
     </header>
   )

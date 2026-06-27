@@ -1,13 +1,29 @@
 .menu {
   @include mobile {
-    &:not(.is-visible) {
-      display: none;
+    position: fixed;
+    z-index: var(--layer-mobile-menu);
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color-light);
+    transition-duration: var(--transition-duration);
+
+    &:not(.is-active) {
+      @include hide;
     }
   }
 
   &__list {
     display: flex;
-    column-gap: fluid(60, 20);
+    align-items: center;
+    gap: fluid(60, 20);
     color: var(--color-dark);
+
+    @include mobile {
+      overflow-y: auto;
+      flex-direction: column;
+      padding-block: 30px;
+    }
   }
 }

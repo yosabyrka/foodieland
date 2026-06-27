@@ -8,4 +8,8 @@
     align-items: center;
     column-gap: 20px;
   }
+
+  &__burger-button {
+    z-index: var(--layer-mobile-menu);
+  }
 }
