@@ -1,7 +1,13 @@
 .menu {
+  @include mobile {
+    &:not(.is-visible) {
+      display: none;
+    }
+  }
+
   &__list {
     display: flex;
-    column-gap: 60px;
+    column-gap: fluid(60, 20);
     color: var(--color-dark);
   }
 }

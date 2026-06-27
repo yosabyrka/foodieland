@@ -1,10 +1,11 @@
 .header {
-  padding-block: 40px;
+  padding-block: fluid(40, 10);
   border-bottom: var(--border);
 
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    column-gap: 20px;
   }
 }
