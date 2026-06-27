@@ -3,13 +3,13 @@
   align-items: center;
   column-gap: 0.3em;
   padding: 8px 12px;
-  color: var(--color-black);
-  background-color: var(--color-white);
+  color: var(--color-dark);
+  background-color: var(--color-light);
   border: var(--border);
   border-radius: var(--border-radius-m);
 
   @include hover {
-    color: var(--color-white);
+    color: var(--color-light);
     background-color: var(--color-accent);
   }
 }
