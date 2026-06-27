@@ -1,2 +1,7 @@
 .menu {
+  &__list {
+    display: flex;
+    column-gap: 60px;
+    color: var(--color-dark);
+  }
 }
