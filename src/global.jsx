@@ -10,7 +10,7 @@ import appleTouchIcon from '@/assets/favicons/apple-touch-icon.png'
 import manifest from '@/assets/favicons/site.webmanifest'
 
 export default (props) => {
-  const { children, title, url } = props
+  const { children, title } = props
 
   return (
     <>
@@ -24,7 +24,7 @@ export default (props) => {
         <meta name="apple-mobile-web-app-title" content="Foodieland" />
         <link rel="manifest" href={manifest} />
       </Head>
-      <Header url={url} />
+      <Header />
       <Content>{children}</Content>
       <Footer />
     </>
