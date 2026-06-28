@@ -1,0 +1,14 @@
+import clsx from 'clsx'
+import './Grid.scss'
+
+export default ({ className, children, columns = 1 }) => {
+  return (
+    <ul className={clsx(`grid grid--${columns}`, className)}>
+      {children.map((child, index) => (
+        <li className="grid__item" key={index}>
+          {child}
+        </li>
+      ))}
+    </ul>
+  )
+}

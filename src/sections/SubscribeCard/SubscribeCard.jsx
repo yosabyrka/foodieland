@@ -29,7 +29,7 @@ export default () => {
             placeholder="Your email address..."
             required
           />
-          <Button className="subscribe-card__button" type="submit">
+          <Button className="subscribe-card__button" size="sm" type="submit">
             Subscribe
           </Button>
         </form>
