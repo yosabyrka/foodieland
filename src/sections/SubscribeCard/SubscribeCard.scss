@@ -6,12 +6,18 @@
     align-items: center;
     margin-block: var(--section-padding-y);
     padding-block: var(--section-padding-y);
+    padding-inline: 10px;
     text-align: center;
     background-image: url('../../assets/images/subscribe-card-bg.png');
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: var(--color-cyan-alt);
     border-radius: var(--border-radius-l);
+
+    @include mobile {
+      border-radius: var(--border-radius);
+    }
   }
 
   &__title {
@@ -25,19 +31,27 @@
 
   &__form {
     display: flex;
-    column-gap: 10px;
+    gap: 10px;
     width: 100%;
     max-width: 480px;
     padding: 10px;
     background-color: var(--color-light);
     border-radius: var(--border-radius-xs);
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
   &__input {
     flex: 1;
     height: 60px;
-    padding-left: 22px;
+    padding: 12px 22px;
     border: none;
+
+    @include mobile {
+      text-align: center;
+    }
 
     &::placeholder {
       font-size: 14px;
