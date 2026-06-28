@@ -39,6 +39,7 @@
 
   --container-width: #{$container-laptop-width}px;
   --container-padding-x: 16px;
+  --section-padding-y: #{fluid(80, 20)};
 
   --transition-duration: 0.2s;
 

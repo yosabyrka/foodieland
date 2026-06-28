@@ -11,6 +11,7 @@ export default () => {
         <Logo className="header__logo" />
         <Menu
           className="header__menu"
+          mode="mobile-overlay"
           extraAttrs={{ 'data-js-mobile-menu-overlay': '' }}
         />
         <Socials className="header__socials" />

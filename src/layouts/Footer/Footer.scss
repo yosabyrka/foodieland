@@ -1,4 +1,51 @@
 .footer {
-  padding-block: 20px;
-  background-color: var(--color-gray);
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: var(--section-padding-y);
+    padding-bottom: fluid(48, 24);
+    border-bottom: var(--border);
+
+    @include tablet {
+      flex-direction: column;
+      row-gap: 24px;
+    }
+  }
+
+  &__info {
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 24px;
+    }
+  }
+
+  &__extra {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    padding-block: fluid(48, 24);
+
+    @include tablet {
+      justify-content: space-between;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 24px;
+    }
+  }
+
+  &__copyright {
+    @include tablet-above {
+      @include abs-center;
+    }
+  }
+
+  &__socials {
+    margin-left: 0;
+  }
 }
