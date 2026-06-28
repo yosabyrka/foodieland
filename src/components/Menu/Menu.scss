@@ -44,4 +44,12 @@
       }
     }
   }
+
+  &--footer {
+    .menu__item {
+      &:first-child {
+        display: none;
+      }
+    }
+  }
 }

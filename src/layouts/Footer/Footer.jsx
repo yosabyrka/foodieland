@@ -14,7 +14,7 @@ export default () => {
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </p>
           </div>
-          <Menu className="footer__menu" />
+          <Menu className="footer__menu" mode="footer" />
         </div>
         <div className="footer__extra">
           <div className="footer__copyright">
