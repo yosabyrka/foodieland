@@ -1,9 +1,7 @@
-import './Section.scss'
 import clsx from 'clsx'
+import './Section.scss'
 
-export default (props) => {
-  const { className, title, titleId, description, children } = props
-
+export default ({ className, title, titleId, description, children }) => {
   return (
     <section
       className={clsx('section', 'container', className)}

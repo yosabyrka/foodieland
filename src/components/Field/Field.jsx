@@ -1,22 +1,17 @@
-import './Field.scss'
-import getIdFromTitle from '@/utils/getIdFromTitle'
 import clsx from 'clsx'
+import getIdFromTitle from '@/utils/getIdFromTitle'
+import './Field.scss'
 
-export default (props) => {
-  const {
-    className,
-    id = getIdFromTitle(props.label),
-    label,
-    /**
-     * undefined (default) | 'email' | 'textarea'
-     */
-    type,
-    placeholder,
-    isRequired,
-    inputMode,
-    mask,
-  } = props
-
+export default ({
+  className,
+  id = getIdFromTitle(props.label),
+  label,
+  type,
+  placeholder,
+  isRequired,
+  inputMode,
+  mask,
+}) => {
   const Component = type === 'textarea' ? 'textarea' : 'input'
 
   const extraAttrs = {}
