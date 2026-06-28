@@ -1,9 +1,7 @@
-import './Button.scss'
 import clsx from 'clsx'
+import './Button.scss'
 
-export default (props) => {
-  const { className, type = 'button', href, children } = props
-
+export default ({ className, type = 'button', href, children }) => {
   const isLink = href !== undefined
   const Component = isLink ? 'a' : 'button'
   const linkAttributes = { href }
