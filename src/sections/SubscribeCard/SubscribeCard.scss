@@ -1,2 +1,53 @@
 .subscribe-card {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: var(--section-padding-y);
+    padding-block: var(--section-padding-y);
+    text-align: center;
+    background-image: url('../../assets/images/subscribe-card-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--color-cyan-alt);
+    border-radius: var(--border-radius-l);
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__description {
+    max-width: 620px;
+    margin-bottom: 64px;
+  }
+
+  &__form {
+    display: flex;
+    column-gap: 10px;
+    width: 100%;
+    max-width: 480px;
+    padding: 10px;
+    background-color: var(--color-light);
+    border-radius: var(--border-radius-xs);
+  }
+
+  &__input {
+    flex: 1;
+    height: 60px;
+    padding-left: 22px;
+    border: none;
+
+    &::placeholder {
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      color: var(--color-dark-60);
+    }
+
+    &:focus {
+      border-radius: calc(var(--border-radius-xs) / 2);
+    }
+  }
 }
