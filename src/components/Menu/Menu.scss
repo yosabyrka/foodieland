@@ -1,29 +1,8 @@
 .menu {
-  @include mobile {
-    position: fixed;
-    z-index: var(--layer-mobile-menu);
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: var(--color-light);
-    transition-duration: var(--transition-duration);
-
-    &:not(.is-active) {
-      @include hide;
-    }
-  }
-
   &__list {
     display: flex;
     align-items: center;
     gap: fluid(60, 20);
-
-    @include mobile {
-      overflow-y: auto;
-      flex-direction: column;
-      padding-block: 30px;
-    }
   }
 
   &__link {
@@ -38,6 +17,31 @@
       content: '';
       width: calc(100% + 34px);
       height: 44px;
+    }
+  }
+
+  &--mobile-overlay {
+    @include mobile {
+      position: fixed;
+      z-index: var(--layer-mobile-menu);
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: var(--color-light);
+      transition-duration: var(--transition-duration);
+
+      &:not(.is-active) {
+        @include hide;
+      }
+    }
+
+    .menu__list {
+      @include mobile {
+        overflow-y: auto;
+        flex-direction: column;
+        padding-block: 30px;
+      }
     }
   }
 }
