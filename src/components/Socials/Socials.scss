@@ -5,11 +5,20 @@
 
   &__list {
     display: flex;
+    align-items: center;
     column-gap: fluid(40, 20);
     color: var(--color-dark);
   }
 
-  &__item {
+  &__link {
+    position: relative;
     display: flex;
+
+    &::after {
+      @include abs-center;
+      @include square(48px);
+
+      content: '';
+    }
   }
 }

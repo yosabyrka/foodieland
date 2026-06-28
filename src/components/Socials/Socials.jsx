@@ -9,7 +9,7 @@ export default ({ className }) => {
       <ul className="soc1als__list">
         {socialItems.map(({ label, icon }) => (
           <li className="soc1als__item" key={label}>
-            <a className="soc1als__item" href="/">
+            <a className="soc1als__link" href="/">
               <Icon name={icon} hasFill />
             </a>
           </li>
