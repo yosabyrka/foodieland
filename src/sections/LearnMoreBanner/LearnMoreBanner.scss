@@ -1,0 +1,38 @@
+.learn-more {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: fluid(40, 30);
+  padding-block: var(--section-padding-y);
+
+  @include laptop {
+    flex-direction: column-reverse;
+  }
+
+  &__body {
+    @include laptop {
+      max-width: 600px;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    @include laptop-above {
+      max-width: 526px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__description {
+    @include laptop-above {
+      max-width: 505px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: fluid(72, 22);
+    }
+  }
+}
