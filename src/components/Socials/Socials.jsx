@@ -1,7 +1,7 @@
 import clsx from 'clsx'
-import './Socials.scss'
 import Icon from '@/components/Icon'
 import { socialItems } from './socials.data'
+import './Socials.scss'
 
 export default ({ className }) => {
   return (
