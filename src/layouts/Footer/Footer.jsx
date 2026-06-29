@@ -1,7 +1,7 @@
-import './Footer.scss'
 import Menu from '@/components/Menu'
 import Logo from '@/components/Logo'
 import Socials from '@/components/Socials'
+import './Footer.scss'
 
 export default () => {
   return (
