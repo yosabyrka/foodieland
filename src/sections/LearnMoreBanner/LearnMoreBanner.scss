@@ -1,0 +1,25 @@
+.learn-more {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding-block: var(--section-padding-y);
+
+  &__body {
+    max-width: 526px;
+  }
+
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__description {
+    max-width: 505px;
+
+    &:not(:last-child) {
+      margin-bottom: 72px;
+    }
+  }
+}

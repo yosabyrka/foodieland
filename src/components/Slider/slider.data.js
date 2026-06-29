@@ -1,7 +1,7 @@
 import scrollImage from '@/assets/images/scroll.png'
 import authorImage from '@/assets/images/author.png'
 import badgeImage from '@/assets/images/badge.svg'
-import slideBgImage from '@/assets/images/slide-bg.png'
+import slideBgImage from '@/assets/images/backgrounds/slide-bg.png'
 
 export const sliderConfig = JSON.stringify({
   spaceBetween: 120,

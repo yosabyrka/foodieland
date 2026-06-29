@@ -1,5 +1,6 @@
 import Hero from '@/sections/Hero'
 import Categories from '@/sections/Categories'
+import LearnMoreBanner from '../sections/LearnMoreBanner'
 import SubscribeCard from '@/sections/SubscribeCard'
 
 export const metadata = {
@@ -11,6 +12,7 @@ export default () => {
     <>
       <Hero />
       <Categories />
+      <LearnMoreBanner />
       <SubscribeCard />
     </>
   )
