@@ -2,24 +2,37 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  gap: fluid(40, 30);
   padding-block: var(--section-padding-y);
 
+  @include laptop {
+    flex-direction: column-reverse;
+  }
+
   &__body {
-    max-width: 526px;
+    @include laptop {
+      max-width: 600px;
+      text-align: center;
+    }
   }
 
   &__title {
+    @include laptop-above {
+      max-width: 526px;
+    }
+
     &:not(:last-child) {
       margin-bottom: 24px;
     }
   }
 
   &__description {
-    max-width: 505px;
+    @include laptop-above {
+      max-width: 505px;
+    }
 
     &:not(:last-child) {
-      margin-bottom: 72px;
+      margin-bottom: fluid(72, 22);
     }
   }
 }
