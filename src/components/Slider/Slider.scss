@@ -1,0 +1,15 @@
+.slider {
+  @include laptop-s {
+    margin-inline: var(--container-padding-x);
+  }
+
+  &__item {
+    overflow: hidden;
+    max-width: var(--container-width);
+    border-radius: var(--border-radius-m);
+
+    @include tablet {
+      border-radius: var(--border-radius);
+    }
+  }
+}

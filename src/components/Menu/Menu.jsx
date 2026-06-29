@@ -1,6 +1,6 @@
 import clsx from 'clsx'
-import './Menu.scss'
 import { menuItems } from './menu.items'
+import './Menu.scss'
 
 export default ({ className, mode, extraAttrs }) => {
   return (

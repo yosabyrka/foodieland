@@ -1,0 +1,16 @@
+import { Image } from 'minista'
+import './AuthorCard.scss'
+
+export default ({ imgSrc, name, date }) => {
+  return (
+    <div className="author-card">
+      <Image src={imgSrc} />
+      <div className="author-card__body">
+        <h3 className="author-card__name">{name}</h3>
+        <time className="author-card__date" dateTime={date.dateTime}>
+          {date.label}
+        </time>
+      </div>
+    </div>
+  )
+}

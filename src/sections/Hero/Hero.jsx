@@ -1,9 +1,13 @@
+import Slider from '@/components/Slider'
 import './Hero.scss'
 
 export default () => {
   return (
     <section className="hero" aria-labelledby="hero-title">
-      <div className="hero__inner container">Hero section content</div>
+      <h1 className="visually-hidden" id="hero-title">
+        Foodieland
+      </h1>
+      <Slider />
     </section>
   )
 }

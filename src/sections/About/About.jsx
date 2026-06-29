@@ -1,5 +1,5 @@
-import './About.scss'
 import Section from '@/layouts/Section'
+import './About.scss'
 
 export default () => {
   return (

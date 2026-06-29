@@ -1,0 +1,16 @@
+.category {
+  display: inline-flex;
+  column-gap: 14px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+
+  &:not(:last-child) {
+    margin-bottom: fluid(32, 16);
+  }
+}

@@ -1,8 +1,8 @@
-import './Header.scss'
 import Logo from '@/components/Logo'
 import Menu from '@/components/Menu'
 import Socials from '@/components/Socials'
 import BurgerButton from '@/components/BurgerButton'
+import './Header.scss'
 
 export default () => {
   return (
