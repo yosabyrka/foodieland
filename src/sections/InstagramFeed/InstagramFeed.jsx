@@ -7,29 +7,32 @@ import './InstagramFeed.scss'
 export default () => {
   return (
     <section className="instagram-feed">
-      <header className="instagram-feed__header">
-        <h2 className="instagram-feed__title" id="instagram-view-title">
-          Check out @foodieland on Instagram
-        </h2>
-        <div className="instagram-feed__description">
-          <p>
-            Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqut enim ad minim
-          </p>
-        </div>
-      </header>
       <div className="instagram-feed__inner">
-        <ul className="instagram-feed__list">
-          {posts.map((post) => (
-            <li className="instagram-feed__item" key={post}>
-              <Image src={post} />
-            </li>
-          ))}
-        </ul>
-        <Button className="instagram-feed__button">
-          <span>Visit Our Instagram</span>
-          <Icon name="instagram" hasFill />
-        </Button>
+        <header className="instagram-feed__header">
+          <h2 className="instagram-feed__title" id="instagram-view-title">
+            Check out @foodieland on Instagram
+          </h2>
+          <div className="instagram-feed__description">
+            <p>
+              Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad
+              minim
+            </p>
+          </div>
+        </header>
+        <div className="instagram-feed__body">
+          <ul className="instagram-feed__list container">
+            {posts.map((post) => (
+              <li className="instagram-feed__item" key={post}>
+                <Image className="instagram-feed__image" src={post} />
+              </li>
+            ))}
+          </ul>
+          <Button className="instagram-feed__button">
+            <span>Visit Our Instagram</span>
+            <Icon name="instagram" hasFill />
+          </Button>
+        </div>
       </div>
     </section>
   )
