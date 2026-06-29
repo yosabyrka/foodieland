@@ -8,7 +8,7 @@ export default ({ className, title, titleId, description, children }) => {
       aria-labelledby={titleId}
     >
       <header className="section__header">
-        <h2 className="section__title h3" id={titleId}>
+        <h2 className="section__title" id={titleId}>
           {title}
         </h2>
         {description && (
