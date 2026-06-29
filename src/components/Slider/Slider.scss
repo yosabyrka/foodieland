@@ -1,0 +1,7 @@
+.slider {
+  &__item {
+    overflow: hidden;
+    max-width: var(--container-width);
+    border-radius: var(--border-radius-m);
+  }
+}
