@@ -1,3 +1,5 @@
 .hero {
-  padding-block: 50px;
+  max-width: 1920px;
+  margin-inline: auto;
+  padding-block: var(--section-padding-y);
 }

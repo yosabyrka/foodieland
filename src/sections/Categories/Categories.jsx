@@ -1,9 +1,9 @@
 import clsx from 'clsx'
-import './Categories.scss'
 import Button from '@/components/Button'
 import Grid from '@/components/Grid'
 import CategoryCard from '@/components/CategoryCard'
 import { categories } from './categories.data'
+import './Categories.scss'
 
 export default ({ className }) => {
   return (
