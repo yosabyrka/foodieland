@@ -1,6 +1,6 @@
 import Hero from '@/sections/Hero'
 import Categories from '@/sections/Categories'
-import LearnMoreBanner from '../sections/LearnMoreBanner'
+import LearnMoreBanner from '../sections/LearnMore'
 import SubscribeCard from '@/sections/SubscribeCard'
 
 export const metadata = {
