@@ -1,7 +1,7 @@
 .section {
   display: grid;
   row-gap: var(--section-padding-y);
-  padding-block: fluid(40, 20) var(--section-padding-y);
+  padding-block: var(--section-padding-y);
 
   &__header {
     display: flex;

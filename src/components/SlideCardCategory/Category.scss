@@ -11,6 +11,6 @@
   box-shadow: var(--shadow);
 
   &:not(:last-child) {
-    margin-bottom: 32px;
+    margin-bottom: fluid(32, 16);
   }
 }

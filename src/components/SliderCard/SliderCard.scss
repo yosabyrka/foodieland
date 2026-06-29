@@ -6,20 +6,21 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 620px;
-    padding: 50px;
+    row-gap: fluid(40, 25);
+    width: 100%;
+    padding: fluid(50, 20);
     background-color: var(--color-cyan);
   }
 
   &__title {
     &:not(:last-child) {
-      margin-bottom: 24px;
+      margin-bottom: fluid(24, 18);
     }
   }
 
   &__description {
     &:not(:last-child) {
-      margin-bottom: 30px;
+      margin-bottom: fluid(30, 22);
     }
   }
 
@@ -27,11 +28,27 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include mobile-s {
+      flex-direction: column;
+      align-items: start;
+      row-gap: 24px;
+    }
   }
 
   &__badge {
     position: absolute;
     top: 50px;
     left: calc(50% - 50px);
+
+    @include laptop-s {
+      display: none;
+    }
+  }
+
+  &__image {
+    @include laptop-s {
+      display: none;
+    }
   }
 }

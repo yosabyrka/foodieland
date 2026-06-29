@@ -33,7 +33,7 @@ export default ({
         </div>
       </div>
       <Image className="slider-card__badge" src={badgeImgSrc} />
-      <Image src={slideImgSrc} />
+      <Image className="slider-card__image" src={slideImgSrc} />
     </div>
   )
 }
