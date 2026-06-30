@@ -1,6 +1,7 @@
 import { Image } from 'minista'
 import Button from '@/components/Button'
 import Icon from '@/components/Icon'
+import Grid from '@/components/Grid'
 import { posts } from './instagram-feed.data'
 import './InstagramFeed.scss'
 
@@ -21,13 +22,11 @@ export default () => {
           </div>
         </header>
         <div className="instagram-feed__body">
-          <ul className="instagram-feed__list container">
+          <Grid columns={4}>
             {posts.map((post) => (
-              <li className="instagram-feed__item" key={post}>
-                <Image className="instagram-feed__image" src={post} />
-              </li>
+              <Image className="instagram-feed__image" src={post} key={post} />
             ))}
-          </ul>
+          </Grid>
           <Button className="instagram-feed__button">
             <span>Visit Our Instagram</span>
             <Icon name="instagram" hasFill />
