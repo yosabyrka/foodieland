@@ -6,6 +6,21 @@
   background-image: var(--gradient);
   border-radius: var(--border-radius);
 
+  &--alt {
+    row-gap: 16px;
+    padding: 0;
+    background-image: none;
+
+    .recipe-card__liked-icon {
+      top: 16px;
+      right: 16px;
+    }
+
+    .recipe-card__title {
+      font-size: 18px;
+    }
+  }
+
   &__image-wrapper {
     position: relative;
   }
