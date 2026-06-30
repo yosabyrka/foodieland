@@ -2,7 +2,6 @@ import Section from '@/layouts/Section'
 import Grid from '@/components/Grid'
 import RecipeCard from '@/components/RecipeCard'
 import { moreRecipes } from './more-recipes.data'
-import './MoreRecipes.scss'
 
 export default () => {
   return (
