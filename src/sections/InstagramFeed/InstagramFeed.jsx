@@ -21,7 +21,7 @@ export default () => {
             </p>
           </div>
         </header>
-        <div className="instagram-feed__body">
+        <div className="instagram-feed__body container">
           <Grid columns={4}>
             {posts.map((post) => (
               <Image className="instagram-feed__image" src={post} key={post} />
