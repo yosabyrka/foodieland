@@ -3,6 +3,7 @@ import Categories from '@/sections/Categories'
 import Recipes from '@/sections/Recipes'
 import LearnMoreBanner from '@/sections/LearnMore'
 import InstagramFeed from '@/sections/InstagramFeed'
+import MoreRecipes from '@/sections/MoreRecipes'
 import SubscribeCard from '@/sections/SubscribeCard'
 
 export const metadata = {
@@ -17,7 +18,7 @@ export default () => {
       <Recipes />
       <LearnMoreBanner />
       <InstagramFeed />
-      {/* MoreRecipes */}
+      <MoreRecipes />
       <SubscribeCard />
     </>
   )
