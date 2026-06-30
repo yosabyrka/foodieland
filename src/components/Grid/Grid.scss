@@ -4,6 +4,7 @@
   display: grid;
   grid-template-columns: repeat(var(--gridColumns), 1fr);
   gap: 40px;
+  width: 100%;
 
   @for $i from 2 through 12 {
     &--#{$i} {
