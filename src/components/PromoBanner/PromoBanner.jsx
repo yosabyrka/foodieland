@@ -7,6 +7,7 @@ export default () => {
   return (
     <article className="promo-banner">
       <h3 className="promo-banner__title">
+        <h3 className="visually-hidden">Don’t forget to eat healthy food</h3>
         <Image src={title} />
       </h3>
       <Image className="promo-banner__image" src={dishImage} />
