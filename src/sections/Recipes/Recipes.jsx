@@ -14,13 +14,13 @@ export default () => {
       description="Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim"
     >
       <Grid columns={3}>
-        {recipes.map(({ id, isBanner, ...recipe }) => {
-          if (isBanner) {
-            return <PromoBanner key={id} />
-          }
-
-          return <RecipeCard key={id} {...recipe} />
-        })}
+        {recipes.map(({ id, isBanner, ...recipe }) =>
+          isBanner ? (
+            <PromoBanner key={id} />
+          ) : (
+            <RecipeCard key={id} {...recipe} />
+          )
+        )}
       </Grid>
     </Section>
   )
