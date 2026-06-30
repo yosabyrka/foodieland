@@ -1,13 +1,22 @@
 import clsx from 'clsx'
 import './Section.scss'
 
-export default ({ className, title, titleId, description, children }) => {
+export default ({
+  className,
+  title,
+  titleId,
+  titleMode,
+  description,
+  children,
+}) => {
   return (
     <section
       className={clsx('section', 'container', className)}
       aria-labelledby={titleId}
     >
-      <header className="section__header">
+      <header
+        className={clsx('section__header', `section__header--${titleMode}`)}
+      >
         <h2 className="section__title" id={titleId}>
           {title}
         </h2>
