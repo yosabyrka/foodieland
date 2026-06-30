@@ -1,6 +1,7 @@
 import Hero from '@/sections/Hero'
 import Categories from '@/sections/Categories'
-import LearnMoreBanner from '../sections/LearnMore'
+import Recipes from '@/sections/Recipes'
+import LearnMoreBanner from '@/sections/LearnMore'
 import InstagramFeed from '@/sections/InstagramFeed'
 import SubscribeCard from '@/sections/SubscribeCard'
 
@@ -13,7 +14,7 @@ export default () => {
     <>
       <Hero />
       <Categories />
-      {/* Recipes */}
+      <Recipes />
       <LearnMoreBanner />
       <InstagramFeed />
       {/* MoreRecipes */}
