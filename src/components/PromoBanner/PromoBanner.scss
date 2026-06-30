@@ -1,0 +1,20 @@
+.promo-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  min-height: 434px;
+  padding-block: 40px 32px;
+  text-align: center;
+  background: url('../../assets/images/backgrounds/promo-banner-bg.png')
+    center / cover no-repeat;
+
+  &__link {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    color: var(--color-light-60);
+  }
+}
